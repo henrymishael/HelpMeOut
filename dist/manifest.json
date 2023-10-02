@@ -20,8 +20,6 @@
     }
   ],
   
-  "options_page":"options.html",
-  
   "permissions": [
     "scripting",
     "tabs",

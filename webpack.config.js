@@ -6,7 +6,7 @@ module.exports = {
    
     entry: {
         popup: './src/popup.jsx',
-        options: './src/options.jsx',
+        // options: './src/options.jsx',
         background: './src/background.js',
         contentScript: './src/contentScript.js',
         recordingUI:'./src/recordingUI.jsx' 
@@ -48,10 +48,10 @@ module.exports = {
         template: './src/popup.html',
         filename: 'popup.html',
     }),
-    new HtmlWebpackPlugin({
-        template: './src/options.html',
-        filename: 'options.html',
-    }),
+    // new HtmlWebpackPlugin({
+    //     template: './src/options.html',
+    //     filename: 'options.html',
+    // }),
     new HtmlWebpackPlugin({
         template: './src/recordingUI.html', 
         filename: 'recordingUI.html',       
