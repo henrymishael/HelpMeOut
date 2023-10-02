@@ -1,0 +1,1 @@
+chrome.tabs.onUpdated.addListener((function(t,e,n){"complete"===e.status&&/^http/.test(n.url)&&chrome.scripting.executeScript({target:{tabId:t},files:["./contentScript.js"]}).then((function(){console.log("we have injected the content script")})).catch((function(t){return console.log(t,"error in background script line 9")}))}));
