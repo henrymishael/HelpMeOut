@@ -24,7 +24,7 @@ function Pop() {
     document.addEventListener("DOMContentLoaded", () => {
         //Get the selectors of the button
         const startVideo = document.querySelector('button#start_record')
-        const stopVideo = document.getElementById('stop_record')
+        const stopVideo = document.querySelector('span#stop_record')
 
         startVideo.addEventListener("click", ()=>{
             chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
@@ -263,7 +263,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 variant='dark'/>
                 <span className='text-[20px] flex flex-row items-center gap-3'>
                   <IoSettingsOutline/>
-                  <span className='text-[#B6B3C6]'>
+                  <span id='stop_record' className='text-[#B6B3C6]'>
                     <AiOutlineCloseCircle/>
                   </span>
                 </span>
