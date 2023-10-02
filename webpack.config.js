@@ -9,7 +9,7 @@ module.exports = {
         // options: './src/options.jsx',
         background: './src/background.js',
         contentScript: './src/contentScript.js',
-        recordingUI:'./src/recordingUI.jsx' 
+        // recordingUI:'./src/recordingUI.jsx' 
     },
     output: {
         path: path.resolve(__dirname, "dist"),
@@ -52,10 +52,10 @@ module.exports = {
     //     template: './src/options.html',
     //     filename: 'options.html',
     // }),
-    new HtmlWebpackPlugin({
-        template: './src/recordingUI.html', 
-        filename: 'recordingUI.html',       
-      }),
+    // new HtmlWebpackPlugin({
+    //     template: './src/recordingUI.html', 
+    //     filename: 'recordingUI.html',       
+    //   }),
     new CopyPlugin({
       patterns: [
         { from: "public"}
